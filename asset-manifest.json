@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.007260d6.css",
+    "main.css": "/my-portfolio/static/css/main.6916f9e9.css",
     "main.js": "/my-portfolio/static/js/main.2f38efce.js",
     "static/js/453.3e9be2cd.chunk.js": "/my-portfolio/static/js/453.3e9be2cd.chunk.js",
     "static/media/laxman-mobile.JPG": "/my-portfolio/static/media/laxman-mobile.8b6b26c8b32e343ea893.JPG",
@@ -14,12 +14,12 @@
     "static/media/css.svg": "/my-portfolio/static/media/css.4e47c3122b8d2476a02f97dcfcb28640.svg",
     "static/media/js.svg": "/my-portfolio/static/media/js.b879f838faf1cb951d1c2230fd933a39.svg",
     "static/media/flutter.svg": "/my-portfolio/static/media/flutter.048226813aa67d3b9c69de4b27f7c1fa.svg",
-    "main.007260d6.css.map": "/my-portfolio/static/css/main.007260d6.css.map",
+    "main.6916f9e9.css.map": "/my-portfolio/static/css/main.6916f9e9.css.map",
     "main.2f38efce.js.map": "/my-portfolio/static/js/main.2f38efce.js.map",
     "453.3e9be2cd.chunk.js.map": "/my-portfolio/static/js/453.3e9be2cd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.007260d6.css",
+    "static/css/main.6916f9e9.css",
     "static/js/main.2f38efce.js"
   ]
 }
