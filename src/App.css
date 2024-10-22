@@ -1,38 +1,207 @@
-.App {
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* About Section */
+.about-section {
+  padding: 60px 0;
+  background-color: #000000;
+}
+
+.section-title {
   text-align: center;
+  color: white; /* Optional: to ensure the text is visible on a black background */
+  margin-bottom: 20px; /* Optional: to add some space below the title */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section-description {
+  text-align: center; /* Align text to the left for mobile view */
+
+  margin-bottom: 20px; /* Add some space below the text */
+  color: #7f7f7f;
+  margin: 20px;
+}
+.download-button {
+  display: block;
+  margin: 20px auto; /* Center the button */
+  border: 2px solid white; /* White border */
+  border-radius: 10px; /* Curved border */
+  background-color: transparent; /* Transparent background */
+  color: white; /* White text */
+  padding: 10px 20px; /* Padding for better appearance */
+  text-align: center; /* Center the text inside the button */
+  text-decoration: none; /* Remove underline from the link */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.download-button:hover {
+  background-color: white; /* White background on hover */
+  color: black; /* Black text on hover */
+}
+.profile-image {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mobile-image {
+  display: none;
+}
+
+/* Skills Section */
+.skills-section {
+  background-color: black;
+  padding: 20px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* skillcard */
+.skill-card {
+  width: 200px; /* Set a fixed width */
+  height: 250px; /* Set a fixed height */
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 20px;
+  margin: 10px;
+  color: white;
+  text-align: center;
+  transition: transform 0.2s;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+}
+
+.skill-logo {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+.skill-name {
+  margin-top: 10px;
+}
+
+/* Experience Section */
+.experience-section{
+  padding: 60px 0;
+  background-color: #000000;
+}
+.experience-card {
+  background-color: #e4e4e4;
+  padding: 2rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Projects Section */
+.projects-section {
+  background-color: black;
+  padding: 20px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #e5e3e3;
+}
+.project-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 20px;
+  margin: 10px;
+  color: white;
+  text-align: center;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Ensure the card takes full width of the carousel item */
+  height: 250px; /* Set a fixed height for the cards */
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-description {
+  margin-top: 10px;
+}
+/* Contact Section */
+.contact-section {
+  padding: 60px 0;
+  background-color: #000000 !important;
+}
+.connect-with-me{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.contact-section form {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.contact-section button {
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  body{
+    overflow-x: hidden;
   }
-  to {
-    transform: rotate(360deg);
+  .about-section {
+    background-color: #000; /* Change background color to black */
   }
+
+  .section-title,
+  .section-description {
+    color: #fff; /* Change text color to white */
+  }
+
+  .desktop-image {
+    display: none;
+  }
+
+  .mobile-image {
+    display: block;
+  }
+  .skill-card {
+    width: 100px; /* Reduce the width for mobile view */
+    height: 125px; /* Reduce the height for mobile view */
+    font-size: 12px;
+  }
+
+  .skills-container {
+    justify-content: space-evenly; /* Adjust spacing for mobile view */
+  }
+  .skill-name {
+    margin-top: 10px;
+    font-size: 12px;
+}
+.social-icon svg{
+  justify-content: space-evenly;
+}
+.section-description {
+  text-align: left; /* Align text to the left for mobile view */
+}
 }

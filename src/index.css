@@ -1,13 +1,38 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.about-me-section {
+  position: relative;
+  height: 100vh; /* Adjust height as needed */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.img-fluid {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background for better readability */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .text-overlay {
+    position: static;
+    transform: none;
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    color: black;
+    text-align: left;
+  }
+
+  .img-fluid {
+    height: auto;
+  }
 }
