@@ -168,6 +168,7 @@ body {
 @media (max-width: 768px) {
   body{
     overflow-x: hidden;
+    background-color: #000;
   }
   .about-section {
     background-color: #000; /* Change background color to black */
